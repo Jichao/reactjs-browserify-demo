@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t reactify app.js -o bundle.js"
+    "build": "browserify -t babelify app.js -o bundle.js"
   },
   "author": "jichao",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^13.1.0",
-    "reactify": "^1.1.1"
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0"
   },
   "dependencies": {
     "react": "^15.3.0",
